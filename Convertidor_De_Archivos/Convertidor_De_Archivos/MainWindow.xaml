@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Convertidor_De_Archivos"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Background="DimGray"
+        Title="MainWindow" Height="720" Width="1280">
     <Grid>
+        <Button Content="Subir Archivo" HorizontalAlignment="Left" Margin="147,25,0,0" VerticalAlignment="Top" Height="85" Width="220" FontSize="32px" Click="Button_Subir"/>
+        <Button Content="Convertir" HorizontalAlignment="Left" Margin="147,332,0,0" VerticalAlignment="Top" Height="85" Width="220" FontSize="32px" Click="Button_Convertir"/>
+        <ProgressBar HorizontalAlignment="Left" Height="24" Margin="13,465,0,0" VerticalAlignment="Top" Width="488"/>
+        <ComboBox x:Name="Opciones" HorizontalAlignment="Left" Margin="43,226,0,0" VerticalAlignment="Top" Width="428" Height="36" FontSize="20px">
+            <ComboBoxItem>
+                <TextBlock>PDF</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Word</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>Excel</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>RTF</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBlock Foreground="White" TextWrapping="Wrap" Margin="102,115,868,501"><Run Language="es-mx" Text="Elegi el tipo de archivo 
+                                                                     
+                                             al que deseas convertir" FontSize="30px"/></TextBlock>
+        <TextBox Name="Text_Preview" HorizontalAlignment="Left" Margin="586,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="659" Height="43"/>
+        <TextBox x:Name="Extension_Preview" HorizontalAlignment="Left" Margin="586,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="659" Height="49"/>
+
 
     </Grid>
 </Window>
